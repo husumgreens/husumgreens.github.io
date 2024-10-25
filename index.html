@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Husum Greens Architectural Standards Manual V.2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        p,
+        ul,
+        address {
+            margin: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 5px 0;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .content-section {
+            background-color: #fff;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        address {
+            font-style: normal;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 20%;
+            height: 100%;
+            background-color: #555;
+            color: #fff;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.4);
+            overflow-y: auto;
+        }
+
+        .sidebar-nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar-nav ul li {
+            margin: 10px 0;
+        }
+
+        .sidebar-nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .sidebar-nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            margin-left: 25%;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Husum Greens Architectural Standards Manual V.2</h1>
+    <p>September 2023</p>
+
+    <nav class="sidebar-nav">
+        <ul>
+            <li>
+                <a href="#1.INTRODUCTION">1. Introduction</a>
+                <ul>
+                    <li><a href="#1.1.SummaryOfGuidelines">1.1. Summary of Guidelines</a></li>
+                    <li><a href="#1.2.ThePurposeOfTheseGuidelines">1.2. The Purpose of These Guidelines</a></li>
+                    <li><a href="#1.3.TheUseOfTheseGuidelines">1.3. The Use of These Guidelines</a></li>
+                    <li><a href="#1.4.DesignReviewCriteria">1.4. Design Review Criteria</a></li>
+                    <li><a href="#1.5.MunicipalRegulatoryPrecedence">1.5. Municipal Regulatory Precedence</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#2.GENERALREQUIREMENTS">2. General Requirements</a>
+                <ul>
+                    <li><a href="#2.1.BuildingSizes">2.1. Building Sizes</a></li>
+                    <li><a href="#2.2.TrimAndSidingColors">2.2. Trim and Siding Colors</a></li>
+                    <li><a href="#2.3.Siding">2.3. Siding</a></li>
+                    <li><a href="#2.4.RoofAndRoofDesign">2.4. Roof and Roof Design</a></li>
+                    <li><a href="#2.5.Windows">2.5. Windows</a></li>
+                    <li><a href="#2.6.ExteriorLighting">2.6. Exterior Lighting</a></li>
+                    <li><a href="#2.7.Fireplaces">2.7. Fireplaces</a></li>
+                    <li><a href="#2.8.Driveways">2.8. Driveways</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#3.EXTERIORANDSITEREQUIREMENTS">3. Exterior and Site Requirements</a>
+                <ul>
+                    <li><a href="#3.1.Excavation">3.1. Excavation</a></li>
+                    <li><a href="#3.2.Fences+Walls">3.2. Fences &amp; Walls</a></li>
+                    <li><a href="#3.3.FireZone">3.3. Fire Zone</a></li>
+                    <li><a href="#3.4.ExteriorFireProtection">3.4. Exterior Fire Protection</a></li>
+                    <li><a href="#3.5.LandscapeIrrigation">3.5. Landscape Irrigation</a></li>
+                    <li><a href="#3.6.ApplicationOfHerbicide">3.6. Application of Herbicides, Pesticides, and
+                            Fertilizers</a></li>
+                    <li><a href="#3.7.OffSiteHousing">3.7. Off-Site Housing</a></li>
+                    <li><a href="#3.8.Solar">3.8. Solar</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#4.LANDSCAPINGREGULATIONS">4. Landscaping Regulations</a>
+                <ul>
+                    <li><a href="#4.1.TimingConstraintsOfLandscaping">4.1. Timing Constraints of Landscaping</a></li>
+                    <li><a href="#4.2.ExteriorMaintenanceByOwner">4.2. Exterior Maintenance by Owner</a></li>
+                    <li><a href="#4.3.LandscapingNuisances">4.3. Landscaping Nuisances</a></li>
+                    <li><a href="#4.4.Fences+Walls+Hedges">4.4. Fences, Walls, and Hedges</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#5.CONSTRUCTIONPROCEDURALREQUIREMENTS">5. Construction Procedural Requirements</a>
+                <ul>
+                    <li><a href="#5.1.ResponsibilitiesOfTheOwner">5.1. Responsibilities of the Owner</a></li>
+                    <li><a href="#5.2.SubmittingAnApplication">5.2. Submitting an Application</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <p>Last Updated: September 2023</p>
+            <h2 id="1.INTRODUCTION">1. INTRODUCTION</h2>
+            <h3 id="1.1.SummaryOfGuidelines">1.1. SUMMARY OF GUIDELINES</h3>
+            <p>While individual Owners retain the right to design and build a home consistent with their needs and
+                choices, it is also important that certain standards and guidelines are in place to ensure that there is
+                general architectural consistency from Lot to Lot, and that guidance can be provided to Owners as they
+                seek to build on their Lot or make modifications to an existing Improvement.</p>
+            <p>To this end, the following Architectural Standards Manual and Guidelines are to be used by the ARC in
+                evaluating plans and specifications under the Declaration concerning those Improvements, including
+                structures and landscaping. It is the responsibility of the ARC to review an Owner's submittals with
+                specific reference to the following standards and guidelines.</p>
+            <p>The standards and guidelines recognize that each Lot may present certain unique circumstances which
+                should be taken into account by the ARC in administering the standards and guidelines, but that a
+                general architectural and aesthetic appearance for Husum Greens also needs to be established and
+                maintained. While cost considerations to an Owner can be taken into account by the ARC in reviewing
+                plans and specifications, cost alone should not be a principal consideration for the ARC in its review.
+            </p>
+            <p>All terms used in the standards and guidelines shall have the defined meanings set forth in the
+                Declaration. The ARC retains all rights to amend, modify, or revise the following standards and
+                guidelines.</p>
+            <h3 id="1.2.ThePurposeOfTheseGuidelines">1.2. THE PURPOSE OF THESE GUIDELINES</h3>
+            <p>The specific objectives of this document are:</p>
+            <ol>
+                <li>To illustrate basic design principles, which will aid Owners in developing exterior improvements and
+                    structural changes that are in harmony with the immediate neighborhood and community as a whole.
+                </li>
+                <li>To provide uniform guidelines to be used by the ARC in reviewing applications in light of the goals
+                    set forth in the governing documents of the community and the actions of the Board of Directors.
+                </li>
+                <li>To assist Owners in preparing an acceptable application to the ARC.</li>
+            </ol>
+            <p>To increase Owners' awareness and understanding of the Declaration.</p>
+            <p>To describe the organization and procedures involved with the architectural standards.</p>
+            <p>To provide guidelines that integrate the site's natural elements with residential home sites.</p>
+            <p>To assist Owners in maintaining a well-kept community in order to protect and enhance the economic,
+                property, and aesthetic values, and the overall desirability of the homes within the community.</p>
+            <p>Any questions regarding these guidelines and procedures or application submissions should be directed to:
+            </p>
+            <address>
+                Husum Greens, LLC<br>
+                c/o Guy Skeele<br>
+                3501 Willamette Falls Dr.<br>
+                West Linn, OR 97068
+            </address>
+            <h3 id="1.3.TheUseOfTheseGuidelines">1.3. THE USE OF THESE GUIDELINES</h3>
+            <p>Each application is to be reviewed on an individual basis before any project is scheduled to begin. The
+                following types of projects need approval by the ARC:</p>
+            <ol>
+                <li>Construction of homes on unbuilt Lots;</li>
+                <li>Additions or alterations to structures, if visible from the exterior of the structure;</li>
+                <li>Installations of Decks, Fences, Patios, Porch screening, Driveways, or Walls;</li>
+                <li>Repainting a structure in a different color, if the color is not on the palette;</li>
+                <li>Landscaping that involves changes in Lot elevations, removal of trees, plants that may block a
+                    street view, creating a potential safety concern, or addition of shrubs or trees that constitute a
+                    natural fence; or</li>
+                <li>Addition of sheds, lean-tos, or other accessory buildings.</li>
+            </ol>
+            <h3 id="1.4.DesignReviewCriteria">1.4. DESIGN REVIEW CRITERIA</h3>
+            <p>The following criteria outline the general standards that will be used in reviewing and evaluating such
+                application for structural or design changes.</p>
+            <ol>
+                <li>
+                    <strong>Validity of Concept:</strong> The basic idea must be sound and appropriate to its
+                    surroundings.
+                </li>
+                <li>
+                    <strong>Design Compatibility:</strong> The proposed Improvement must be compatible with the
+                    architectural characteristics of the applicant's house, adjoining houses, and the neighborhood
+                    setting. Compatibility is defined as similarity in architectural style, workmanship quality, and
+                    similar material usage, color, and construction details. Because of recent significant advances in
+                    panelized and modular construction techniques, customized designs incorporating these methods will
+                    be evaluated on a case by case basis.
+                </li>
+                <li>
+                    <strong>Building Classification:</strong> Only residential properties are allowed on Lots.
+                </li>
+                <li>
+                    <strong>Location and Impact on Neighbors:</strong> The proposed home or any subsequent alteration
+                    should relate favorably to the landscape, the existing structure when applicable, and the
+                    neighborhood. The primary concerns include, but are not limited to, access, sunlight, ventilation,
+                    and drainage. For example, (a) fences may not obstruct views, breezes, or access to a neighboring
+                    property; (b) decks or larger additions may not cast unwanted shadows on an adjacent patio or
+                    property or infringe on a neighbor's privacy; and (c) lighting may not cast unreasonable light on or
+                    to adjacent properties. The size of the proposed alteration should relate well to adjacent
+                    structures and their surroundings. For example, a large addition to a small house or construction of
+                    a storage outbuilding may be inappropriate.
+                </li>
+                <li>
+                    <strong>Color:</strong> Color may be used to soften or intensify visual impact. Similar portions of
+                    an addition to an existing house, such as roofs, siding, and trim, should be matching in color.
+                    Paint colors for shutters, entry doors, and garage doors must be one of the approved colors for the
+                    community or one approved by the ARC. Wooden trim (e.g., eaves, fascia, window framing) and
+                    gutters/downspouts must be approved by the ARC.
+                </li>
+                <li>
+                    <strong>Materials:</strong> When proposing to extend or modify an existing home, continuity is
+                    established by use of the same or compatible materials as were used in the original home. The
+                    options may be limited by the design and materials of the original home.
+                </li>
+            </ol>
+            <h3 id="1.5.MunicipalRegulatoryPrecedence">1.5. MUNICIPAL REGULATORY PRECEDENCE</h3>
+            <p>All plans and specifications submitted to the ARC must be fully compliant with all legal standards,
+                including those of Klickitat County. The ARC shall have no authority to make any exceptions to such
+                standards. Any ARC decision which is subsequently found to be in conflict with such standards shall be
+                voided, requiring the Owner to conform, at the Owner's expense, to such legal standards.</p>
+        </section>
+        <section>
+            <h2 id="2.GENERALREQUIREMENTS">2. GENERAL REQUIREMENTS</h2>
+            <p>This section defines acceptable new building materials. A licensed contractor is required, and a copy of
+                the license must be submitted prior to commencement of construction.</p>
+            <h3 id="2.1.BuildingSizes">2.1. Building Sizes</h3>
+            <p>No structure shall exceed 28 feet in height, measured from the highest point of finished soil immediately
+                adjacent to the foundation to the highest point of roof structure. No residential dwelling shall be less
+                than 1,500 square feet excluding the garage/carport or have a foot print larger than 5,000 square feet
+                including an attached garage. Each Lot shall be limited to one detached structure, which shall not be
+                more than 30% of the square footage of the primary residence, and which foot print may not be more than
+                1,000 square feet regardless of primary residence square footage. Every primary residence shall be
+                required to contain at least one enclosed garage or detached carport capable of containing 2 full sized
+                cars.</p>
+            <h3 id="2.2.TrimAndSidingColors">2.2. Trim and Siding Colors</h3>
+            <p>All exterior colors must be approved by the ARC. Owners are encouraged to use local rocks or replica
+                colors and textures. No Lots are allowed to incorporate bricks of any color. Exterior colors shall be
+                natural stain with a satin a finish, not a gloss finish. Paints shall be earth tones with a flat or
+                satin finish.</p>
+            <h3 id="2.3.Siding">2.3. Siding</h3>
+            <p>Maximum reveal for any lap siding will be 8 inches with a minimum of 4 inches. Siding material may be
+                wood, cementitious fiberboard, synthetic plaster, brick or stone veneer, or as otherwise approved by the
+                ARC.</p>
+            <h3 id="2.4.RoofAndRoofDesign">2.4. Roof and Roof Design</h3>
+            <p>Architectural styles for Lots are allowed to incorporate hip roofs, gabled roofs, and flat or drop panel
+                flat roofs. Architectural styles for all other Lots shall have chalet style roofs. All finished roofing
+                shall be either Architectural 80 asphalt tab roofing, ceramic tile, or metal roofing that meets the
+                approved colors/tones for the community.</p>
+            <h3 id="2.5.Windows">2.5. Windows</h3>
+            <p>Wood / metal clad wood, vinyl, and thermally broken aluminum windows will be approved. All windows must
+                have exterior trim installed. The exterior color of draperies, under draperies, drapery lining, or other
+                window coverings for any building shall not be any color other than earth tones, unless the Board grants
+                a waiver.</p>
+            <h3 id="2.6.ExteriorLighting">2.6. Exterior Lighting</h3>
+            <p>All exterior lighting shall conform to the Klickitat County Dark Skies Ordinance.</p>
+            <h3 id="2.7.Fireplaces">2.7. Fireplaces</h3>
+            <p>Wood or pellet burning fireplaces, stoves, or similar devices are required to have and maintain catalytic
+                systems and cinder screens. Tanks for propane storage shall be buried or installed in a below-ground
+                vault and must follow IBC and NFPA codes and regulations.</p>
+            <h3 id="2.8.Driveways">2.8. Driveways</h3>
+            <p>No driveway shall have a slope greater than 15%. No driveway shall have a width less than 14 feet or a
+                width greater than 22 feet, except within 30 feet of the face of : garage or carport, when the hard
+                surface can be up to 40 feet wide or across the entire face of the garage plus 12 feet. All driveways
+                are required to have a hard surface composed of either paver stones, poured concrete, or asphalt from
+                the public street to the garage apron.</p>
+        </section>
+        <section>
+            <h2 id="3.EXTERIORANDSITEREQUIREMENTS">3. EXTERIOR AND SITE REQUIREMENTS</h2>
+            <p>This section defines acceptable exterior and site-specific regulations in addition to those regulated by
+                the Declaration.</p>
+            <h3 id="3.1.Excavation">3.1. Excavation</h3>
+            <p>Excavation of more than 50 cubic yards for any purpose must be approved by the ARC.</p>
+            <h3 id="3.2.Fences+Walls">3.2. Fences &amp; Walls</h3>
+            <p>The design and placement of any fences and walls, including retaining walls, shall require the approval
+                of the Declarant or the ARC.</p>
+            <h3 id="3.3.FireZone">3.3. Fire Zone</h3>
+            <p>Owners must maintain a fire safety zone of 30 feet around all structures on flat ground and 40 feet on
+                slopes greater than 6%. The fire safety zone should adhere to the following measures:</p>
+            <ol>
+                <li>Tree limbs on trees with a DBH (diameter at breast height) of at least 12 inches must be raised 7
+                    feet from the ground.</li>
+                <li>Grass must be kept under 6 inches in height.</li>
+                <li>No dead standing trees.</li>
+            </ol>
+            <h3 id="3.4.ExteriorFireProtection">3.4. Exterior Fire Protection</h3>
+            <p>Owners are prohibited from burning yard debris, garbage, or other combustible material at any time. The
+                Board shall make available a chipping machine at least 3 times per calendar year for the purpose of
+                debris disposal.</p>
+            <h3 id="3.5.LandscapeIrrigation">3.5. Landscape Irrigation</h3>
+            <p>Use of domestic water for landscape material is prohibited except for the initial establishment of
+                landscaping outside the irrigation season. All other exterior landscape irrigation shall only be
+                provided with the supplied irrigation system. Owners must install and maintain irrigation flow sensors
+                which ensure monitoring of correct flow to avoid water waste and excess run-off. Owners are required to
+                install and maintain pressure-regulated spray heads for irrigation.</p>
+            <h3 id="3.6.ApplicationOfHerbicide">3.6. Application of Herbicide, Pesticides, and
+                Fertilizers</h3>
+            <p>To the extent practicable, the Association should restrict the broadcast application of herbicides, and
+                should confine applications to point/plant specific applications. To the extent practicable, the
+                Association should avoid broadcast or large-scale disbursement of pesticides, and should confine
+                application to specific areas of infestation. The Association shall avoid the application of fertilizers
+                within 25 feet of wetlands, drainage channels, storm water retention structures, and ponds. Application
+                of fertilizers in other areas under the control of the Association shall follow the Manufacturer's
+                Instructions.</p>
+            <h3 id="3.7.OffSiteHousing">3.7. Off-Site Housing</h3>
+            <p>No frame-mounted off-site constructed manufactured housing is allowed. Off-site constructed modular
+                housing is allowed.</p>
+            <h3 id="3.8.Solar">3.8. Solar</h3>
+            <p>All primary residences are allowed to install either roof top or ground-based solar systems with the
+                set-back requirements found in the County Zoning limits, and subject to final approval by the ARC.</p>
+        </section>
+        <section>
+            <h2 id="4.LANDSCAPINGREGULATIONS">4. LANDSCAPING REGULATIONS</h2>
+            <p>This section defines acceptable new landscaping materials in addition to those allowed by the
+                Declaration.</p>
+            <h3 id="4.1.TimingConstraintsOfLandscaping">4.1. Timing Constraints of Landscaping</h3>
+            <p>All disturbed soils are to be planted or landscaped within 90 days of occupancy or completion of any
+                structure or improvement. Landscape plans shall be submitted to the Declarant or ARC 30 days prior to
+                the commencement of planting, and shall be subject to the approval of the board.</p>
+            <h3 id="4.2.ExteriorMaintenanceByOwner">4.2. Exterior Maintenance by Owner</h3>
+            <p>Each Lot, the home and all Improvements on the Lot, and the landscaping of the Lot, shall be maintained
+                by the Owner in a neat, clean, and sightly condition at all times, and shall be kept free of
+                accumulation of litter, junk, containers, equipment, building materials, and other debris. The
+                landscaping of each Lot shall be kept in a neat and sightly condition including mowing, trimming,
+                pruning and other standard practices in accordance with such rules or regulations adopted by the Board.
+                The yards on each Lot shall reflect reasonable maintenance consistent with the neighborhood, including,
+                but not limited to, the following:</p>
+            <ol>
+                <li>Grass should not grow over sidewalks, curbs, walkways, or driveways.</li>
+                <li>Flower beds, shrubbery beds, planting areas, and other non-lawn areas shall be kept free of weeds
+                    and grass.</li>
+                <li>Underlying ground cover, such as plastic sheeting, should not be visible.</li>
+                <li>Plastic sheeting or other similar materials may not be used as a top-layer ground cover.</li>
+                <li>Shrubbery should be pruned so as not to encroach upon the street.</li>
+                <li>Trees should be pruned so as not to impede pedestrian or vehicle ingress and egress along the
+                    street. Trees overhanging into adjacent Lots should be maintained by the Owner of the Lot where the
+                    tree is planted. Trees and other shrubs may not unreasonably interfere with light or ground
+                    conditions of adjacent Lots.</li>
+                <li>A Lot shall not be used as a dump for trash or rubbish of any kind. Household trash, lumber,
+                    building materials, vehicle parts, inoperable vehicles, abandoned or broken equipment, apparatus or
+                    devices, grass clippings, branches, and other yard refuse may not be left on front or side yards,
+                    sidewalks, streets, or other areas where they are visible from the street or any other Lot.</li>
+            </ol>
+            <h3 id="4.3.LandscapingNuisances">4.3. Landscaping Nuisances</h3>
+            <p>No Lot shall be used in whole or part for storage of anything that in the opinion of Declarant, the
+                Board, or the ARC will cause a Lot to appear in an unclean, disorderly, or untidy condition. An Owner
+                shall not undertake, permit, or allow any noxious activity or thing on any Lot that, in the opinion of
+                the Board or the ARC, may be or become a nuisance or unreasonably interfere with the use and enjoyment
+                of other Lots by any Owner. An Owner shall keep all Lots owned by the Owner prior to, during, and after
+                the construction of the home and all Improvements in a neat and orderly condition free of brush, vines,
+                weeds, trash, and debris, and shall maintain all Lots owned by the Owner in such condition of
+                maintenance and repair to prevent the creation of a nuisance or health hazard. Garbage cans and
+                recycling containers shall be screened from view.</p>
+            <h3 id="#4.4.Fences+Walls+Hedges">4.4. Fences, Walls, and Hedges</h3>
+            <p>Lots may not have fences or walls on the street boundary of the Lot. Chain link fences are not permitted.
+                Hedges up to a height limit of 4 feet are acceptable. The hedge species requires prior ARC approval. The
+                side and rear boundaries of the Lots may be, but are not required to be, fenced, walled, or hedged. No
+                hedge, fence, or wall shall extend further forward than the dwelling's front elevation upon the Lot. The
+                height limit is 6 feet on the rear boundary and 5 feet on the side boundary. The fence structure must
+                extend at least 2 feet beneath ground level, with posts made of cedar, rot-resistant 4x4s, or better.
+            </p>
+        </section>
+        <section>
+            <h2 id="5.CONSTRUCTIONPROCEDURALREQUIREMENTS">5. CONSTRUCTION PROCEDURAL REQUIREMENTS</h2>
+            <h3 id="5.1.ResponsibilitiesOfTheOwner">5.1. Responsibilities of the Owner</h3>
+            <ol>
+                <li>The Owner must have clear title to make property improvements, notwithstanding mortgages.</li>
+                <li>The Owner should refer to both this document and any other governing documents of the Association
+                    for architectural requirements.</li>
+                <li>The Owner and subsequent Owners agree to indemnify, defend, save and hold harmless the Association
+                    and its officers, agents and employees from any claim, suit, action or activity undertaken under
+                    these Standards, including construction under an approved building permit.</li>
+            </ol>
+            <h3 id="5.2.SubmittingAnApplication">5.2. Submitting an Application</h3>
+            <p>Plans may be submitted via postal mail to:</p>
+            <address>
+                Husum Greens, LLC<br>
+                c/o Guy Skeele<br>
+                3501 Willamette Falls Dr.<br>
+                West Linn, OR 97068
+            </address>
+        </section>
+    </main>
+</body>
+
+</html>
